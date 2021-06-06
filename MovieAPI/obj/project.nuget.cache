@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WhXLMWcYlQqfH5dDJoqqS8in6gztfGdVLKqQ+24flLHWSsM3aws0+2AKbgudM/ooer1EQHcfqd36Pz4zxLhBOw==",
+  "dgSpecHash": "rU25FNx2O6/cPvv2tGRMJWmacA73RCTPNKeKhsUUS8amVeHtaxFUcl8KTrL/D+FJaYRRBde//01yhf3y8SkA0Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Freaqke\\Desktop\\S6-individueel\\MovieAPI\\MovieAPI\\MovieAPI.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\Freaqke\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\Freaqke\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\Freaqke\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Freaqke\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512",
     "C:\\Users\\Freaqke\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\Freaqke\\.nuget\\packages\\pipelines.sockets.unofficial\\2.0.17\\pipelines.sockets.unofficial.2.0.17.nupkg.sha512",
     "C:\\Users\\Freaqke\\.nuget\\packages\\stackexchange.redis\\2.0.593\\stackexchange.redis.2.0.593.nupkg.sha512",

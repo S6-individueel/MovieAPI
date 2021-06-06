@@ -53,10 +53,5 @@ namespace MovieAPI.Controllers
             await _distributedCache.RemoveAsync(key);
             return Ok(new { Message = $"cleared cache for key - {key}" });
         }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
     }
 }
