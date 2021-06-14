@@ -28,8 +28,10 @@ namespace MovieAPI
         {
             services.AddControllers();
 
+            var redisConnection = Configuration["REDIS_DBCONNECTION"] ?? "localhost:6379";
+
             services.AddStackExchangeRedisCache(options => {
-                options.Configuration = "localhost:6379";
+                options.Configuration = redisConnection;
                 options.InstanceName = "Movie.Api";
             });
 
