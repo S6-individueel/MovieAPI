@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: movieapi
+  labels: 
+    app: movieapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: movieapi
+  template:
+    metadata:
+      labels:
+        app: movieapi
+    spec:
+      containers:
+      - name: movieapi
+        image: acrvod.azurecr.io/movieapi:v1
+        imagePullPolicy: IfNotPresent
+        ports:
+          - containerPort: 80
+        env:
+          - name: ASPNETCORE_ENVIRONMENT
+            value: Development
+          - name: REDIS_DBCONNECTION
+            value: redis:6379
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "0.1"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+      imagePullSecrets:
+        - name: acr-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: movieapi
+  labels:
+    app: movieapi
+spec:
+  selector:
+    app: movieapi
+  ports:
+  - protocol: TCP
+    port: 80
+
