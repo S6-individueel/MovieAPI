@@ -11,7 +11,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'c106ed52-c978-4312-b290-b502f3aaeae4'
-  imageRepository: 'sindividueelmovieapi'
+  imageRepository: 'movieapi'
   containerRegistry: 'acrvod.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/MovieAPI/Dockerfile'
   tag: '$(Build.BuildId)'
