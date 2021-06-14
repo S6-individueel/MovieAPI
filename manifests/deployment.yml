@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: movieapi 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: movieapi
+  template:
+    metadata:
+      labels:
+        app: movieapi 
+    spec:
+      containers:
+        - name: movieapi 
+          image: acrvod.azurecr.io/movieapi
+          ports:
+          - containerPort: 80
